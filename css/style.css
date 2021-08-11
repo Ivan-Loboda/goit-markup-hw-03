@@ -303,6 +303,7 @@ img {
 }
 
 .portfolio-button {
+  border: none;
   min-width: 73px;
   min-height: 38px;
   padding: 0px 22px;
