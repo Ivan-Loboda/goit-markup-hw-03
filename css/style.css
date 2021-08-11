@@ -76,6 +76,7 @@ img {
 .button {
   font-family: 'Roboto';
   cursor: pointer;
+  border-radius: 4px;
 }
 
 /* -----header----- */
@@ -181,7 +182,6 @@ img {
   letter-spacing: 0.06em;
   line-height: 1.87;
   margin: 0 auto;
-  border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
   padding: 10px 32px;
@@ -310,6 +310,7 @@ img {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  border-color: #F5F4FA;
 }
 
 .portfolio-button:hover,
