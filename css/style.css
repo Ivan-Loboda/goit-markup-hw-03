@@ -93,7 +93,7 @@ img {
   display: flex;
 }
 
-.nav-item:not(:nth-last-child(-n + 1)){
+.nav-item:not(:nth-last-child(-n + 1)) {
   margin-right: 50px;
 }
 
@@ -377,8 +377,11 @@ img {
 .footer-adress {
   font-weight: 400;
   font-style: normal;
-  margin-bottom: 9px;
   color: rgba(255, 255, 255, 60%);
+}
+
+.footer-adress:not(:nth-last-child(-n + 1)) {
+  margin-bottom: 9px;
 }
 
 .footer-logo.logo {
