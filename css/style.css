@@ -223,7 +223,7 @@ img {
 }
 
 .article-item {
-  min-width: 270px;
+  width: 270px;
 }
 
 .article-item:not(:nth-last-child(-n + 1)) {
@@ -245,6 +245,10 @@ img {
 .gallery-list {
   display: flex;
   justify-content: space-between;
+}
+
+.gallery-item {
+  width: 370px;
 }
 
 .gallery-item:not(:nth-last-child(-n + 1)) {
@@ -282,9 +286,6 @@ img {
 
 .team-item {
   width: 270px;
-  height: 404px;
-  left: 615px;
-  top: 262px;
   background-color: var(--primary-bacground-color);
   border-radius: 0px 0px 4px 4px;
 }
