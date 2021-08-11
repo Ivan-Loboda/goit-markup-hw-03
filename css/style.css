@@ -1,13 +1,3 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 h1,
 h2,
 h3,
@@ -63,8 +53,11 @@ img {
   padding-bottom: 94px;
 }
 
+.section.section-dop {
+  padding-top: 0px;
+}
+
 .container {
-  box-sizing: border-box;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -72,6 +65,7 @@ img {
   padding-right: 15px;
   /* outline: 2px solid tomato; */
 }
+
 
 .button {
   font-family: 'Roboto';
@@ -82,31 +76,28 @@ img {
 /* -----header----- */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
 .wrapper {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .site-nav {
-  vertical-align: middle;
+  display: block;
+  padding: 32px 0px;
 }
 
 .nav-list {
   display: flex;
 }
 
-.nav-item {
+.nav-item:not(:nth-last-child(-n + 1)){
   margin-right: 50px;
 }
 
 .link-nav {
-  width: 77px;
-  height: 16px;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -126,6 +117,8 @@ img {
   color: var(--accent-color);
 }
 
+
+
 .header-adress {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -137,8 +130,13 @@ img {
   color: var(--accent-color);
 }
 
-.header-tel {
+.header-adress-list {
+  display: flex;
   margin-left: auto;
+  margin-right: 50px;
+}
+
+.header-adress-mail {
   margin-right: 50px;
 }
 
@@ -167,11 +165,14 @@ img {
 }
 
 .hero-title {
+  max-width: 900px;
   letter-spacing: 0.06em;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Кнопка заказа */
@@ -196,8 +197,12 @@ img {
 /* section-article */
 
 /* .section-article {
-  hiden
+  visibility: hidden
 } */
+
+.article-title {
+  visibility: hidden
+}
 
 .article-sub-title {
   font-weight: 700;
@@ -233,6 +238,7 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.71;
+  margin-bottom: 50px;
 }
 
 .gallery-list {
@@ -240,9 +246,8 @@ img {
   justify-content: space-between;
 }
 
-.gallery-img {
-  width: 370px;
-  height: 294px;
+.gallery-item:not(:nth-last-child(-n + 1)) {
+  margin-right: 30px;
 }
 
 /* section-team */
@@ -260,15 +265,11 @@ img {
 }
 
 .team-title {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.71;
-}
-
-.team-img {
-  width: 270px;
-  height: 260px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .team-sub-title {
@@ -290,6 +291,13 @@ img {
 .team-text {
   line-height: 1.19;
 }
+
+.team-box {
+  padding: 30px 70px;
+}
+
+
+
 
 /* -----portfolio----- */
 .portfolio-nav-list {
@@ -351,10 +359,10 @@ img {
 }
 
 .portfolio-card-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 /* -----footer----- */
