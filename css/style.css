@@ -218,7 +218,7 @@ img {
   visibility: hidden
 } */
 
-.article-sup-title {
+.article-sub-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -289,7 +289,7 @@ img {
   margin-bottom: 50px;
 }
 
-.team-sup-title {
+.team-sub-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -364,7 +364,7 @@ img {
   background: var(--primary-bacground-color);
 }
 
-.portfolio-cards-sup-title {
+.portfolio-cards-sub-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
